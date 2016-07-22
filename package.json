@@ -1,6 +1,6 @@
 {
   "name": "zooid-error-state",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ErrorState",
   "main": "dist/bundle.js",
   "scripts": {
