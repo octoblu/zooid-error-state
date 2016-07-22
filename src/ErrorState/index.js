@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react'
 import classNames from 'classnames'
 
-import styles from './index.css'
+import styles from './styles.css'
 
 const ErrorState = ({ className, description, title }) => {
   return <div className={classNames(styles.wrapper, className)}>
-    <div className={styles.title}>{title}</div>
-    <div className={styles.description}>{description}</div>
+    <h1 className={styles.title}>{title}</h1>
+    <p className={styles.description}>{description}</p>
   </div>
 }
 

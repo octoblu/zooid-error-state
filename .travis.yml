@@ -8,7 +8,7 @@ before_deploy:
 - npm run build
 addons:
   code_climate:
-    repo_token: #get repo_token from https://codeclimate.com/dashboard
+    repo_token: c6e97d320536a3a5997ab7dbb1b4a30b3ed670f5142551a6890a75fe31e81a15
 before_script:
 - npm install -g codeclimate-test-reporter
 after_script:
