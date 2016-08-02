@@ -16,12 +16,13 @@ npm install --save zooid-error-state
 | buttonText  | string |         | Text to display in the primary action (optional)     |
 | className   | string |         | Additional css classes to merge into the component   |
 | description | string |         | Text explaining the cause of the error               |
+| href        | string |         | URL for the primary action to link to                |
 | onClick     | func   |         | Called when the primary action is clicked (optional) |
 | title       | string |         | Title of the error                                   |
 
 ## Note
 
-If falsy values are passed in for either the `onClick` or the `buttonText`, the primary action button will not render
+For the button to render, a truthy `buttonText` value and either an `onClick` or `href` value must be specified.
 
 ## Example
 ```js
