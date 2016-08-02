@@ -11,12 +11,31 @@ npm install --save zooid-error-state
 ```
 
 ## Props
-| Prop      | Type   | Default | Description                          |
-| ----------| -------| --------| -------------------------------------|
-| className | string |         | Additional css classes to merge into the component |
+| Prop        | Type   | Default | Description                                          |
+| ----------- | -------| --------| -----------------------------------------------------|
+| buttonText  | string |         | Text to display in the primary action (optional)     |
+| className   | string |         | Additional css classes to merge into the component   |
+| description | string |         | Text explaining the cause of the error               |
+| onClick     | func   |         | Called when the primary action is clicked (optional) |
+| title       | string |         | Title of the error                                   |
 
+## Note
+
+If falsy values are passed in for either the `onClick` or the `buttonText`, the primary action button will not render
 
 ## Example
 ```js
 import ErrorState from 'zooid-error-state'
+
+export default class App extends Component {
+  render() {
+    return (
+      <ErrorState
+        title="Sample Error"
+        description="Something has gone terribly wrong"
+        buttonText="Continue"
+        onClick={action('onClick')} />
+    )
+  }
+}
 ```

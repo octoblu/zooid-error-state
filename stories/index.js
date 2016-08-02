@@ -13,3 +13,10 @@ storiesOf('ErrorState', module)
   .addWithInfo('w/Description', 'Displaying a custom title and description', () => (
     <ErrorState title="Sample Error" description="Something has gone terribly wrong" />
   ), { inline: true })
+  .addWithInfo('w/Primary Action', 'Adding a primary action', () => (
+    <ErrorState
+      title="Sample Error"
+      description="Something has gone terribly wrong"
+      buttonText="Continue"
+      onClick={action('onClick')} />
+  ), { inline: true })
