@@ -12,11 +12,13 @@ const PrimaryAction = ({text, href, onClick}) => {
 }
 
 const ErrorState = ({ buttonText, className, description, href, onClick, title }) => {
-  return <div className={classNames(styles.wrapper, className)}>
-    <h1 className={styles.title}>{title}</h1>
-    <p className={styles.description}>{description}</p>
-    <PrimaryAction text={buttonText} onClick={onClick} href={href} />
-  </div>
+  return (
+    <div className={classNames(styles.wrapper, className)}>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.description}>{description}</p>
+      <PrimaryAction text={buttonText} onClick={onClick} href={href} />
+    </div>
+  )
 }
 
 ErrorState.defaultProps = {
