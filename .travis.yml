@@ -22,3 +22,6 @@ deploy:
     secure: Jyh6XkK5nUn7EnK57ByALHTWQvPsHN7EmG+4DvqRvGcJG/ruFqV2OlApi/xZwTsQwCCFyXFLp8cyE1hYVcLzsPLW76/nAGX6Kfp5yDfh20kAbEKrP6H55Phx/ri7mJ9+eNumxfcyNm0pTvc+WX7TM6Qdte/jaxJYoGlFjyG7fslo9TiRAHbpSkqHEC6wgDIPv7sQVQ9CjYEurgi6bufamXZTnicHWvTSvuGKKLcWrpovcn0BvuvM5+iOXuxJnlVJOo3wQUa6NyNanHpyXY3X3xWXBWbVXy7IG/fph5NTEPI7EVSeEvTiCQVCfvzXrYSVT5kOGvqJud1W/3IEy7vZ7A+zZrBLOS1/rY1HNycF3WZ8cZJD8COTrHGUdOLdzs2k+yewIBLTE5WxCCbk4AHf50vB87ipkWjrVLzVglx84Ql7x/nDrOj+zwNVKys1aRwA5QyX5WFEp9MB2xjTMt5sFJ59ibmJNCRWNuoz3MZRite/hNWMM14BgPzvjOu0FJVLYJLZDq0OWZXnOOM4B4ngTnq9YVK4aVsYl+7UnEn1TUantAZc3U05Catt+eVXaWt1pGoMvgSSYxpsY81UTYb8t1gQPp+3j/8NRIh0dvziFV2h7kO8jf6wnJQ/wpn5cr+YZRLOO5p0S8vonqs4vUHsBbBdskkLEQsP3RAQ4xkqzbc=
 after_success:
 - bash <(curl -s https://codecov.io/bash)
+branches:
+  only:
+  - "/^v[0-9]/"
